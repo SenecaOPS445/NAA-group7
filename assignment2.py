@@ -35,3 +35,6 @@ def check_disk_usage(disk):
             
 
 
+=======
+        print(f"Error checking disk health: {e}\n")
+>>>>>>> 059d034aa166e43f4ece53b25b86330af7e5b289
