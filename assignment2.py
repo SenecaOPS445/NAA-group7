@@ -22,19 +22,3 @@ def check_disk_usage(disk):
         print(f"Free: {usage.free // (1024 ** 3)} GB\n")
     except Exception as e:
         print(f"Error checking for disk usage: {e}")
-
-
-
-
-
-
-
-
-
-
-            
-
-
-=======
-        print(f"Error checking disk health: {e}\n")
->>>>>>> 059d034aa166e43f4ece53b25b86330af7e5b289
