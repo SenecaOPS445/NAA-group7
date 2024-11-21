@@ -12,6 +12,7 @@ def check_disk_health(disk):
         print(result)
    except Exception as e:
         print(f"Error checking disk health: {e}\n")
+
 def check_disk_usage(disk):
     "Check the usage of the disk"
     try:
