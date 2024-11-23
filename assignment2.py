@@ -22,3 +22,22 @@ def check_disk_usage(disk):
         print(f"Free: {usage.free // (1024 ** 3)} GB\n")
     except Exception as e:
         print(f"Error checking for disk usage: {e}")
+        
+def main():
+    if len(sys.argv) < 3:
+        print("Usage: monitor.py <partition> <disk>")
+        print("Example: sudo ./monitor.py / /dev/sda")
+        sys.exit(1)
+
+    # Command-line arguments
+    partition = sys.argv[1]  # e.g., "/"
+    disk = sys.argv[2]       # e.g., "/dev/sda"
+
+    print("\n--- Hard Drive Usage Monitoring ---")
+    check_disk_usage(partition)
+
+    print("\n--- Hard Drive Health Check ---")
+    check_disk_health(disk)
+
+if __name__ == "__main__":
+    main()
