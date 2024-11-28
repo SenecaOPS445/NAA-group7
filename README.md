@@ -13,3 +13,4 @@ Requires sudo permission.
 Uses smartctl tool.
 Will append result to a file.
 Will generate two outputs.
+sudo apt install smartmontools
